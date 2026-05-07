@@ -2,7 +2,7 @@
 
 namespace AirlineBookingSystem.Payments.Core.Repositories
 {
-    internal interface IPaymentRepository
+    public interface IPaymentRepository
     {
         Task ProcessPaymentAsync(Payment payment);
         Task RefundPaymentAsync(Guid id);
