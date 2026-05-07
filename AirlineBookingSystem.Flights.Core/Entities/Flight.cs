@@ -1,6 +1,6 @@
 ﻿namespace AirlineBookingSystem.Flights.Core.Entities
 {
-    public class Flights
+    public class Flight
     {
         public Guid Id { get; set; }
         public string FlightNumber { get; set; }

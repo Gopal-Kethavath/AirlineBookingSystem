@@ -1,9 +1,11 @@
-﻿namespace AirlineBookingSystem.Flights.Core.Repositories
+﻿using AirlineBookingSystem.Flights.Core.Entities;
+
+namespace AirlineBookingSystem.Flights.Core.Repositories
 {
     public interface IFlightRepository
     {
-        Task<Entities.Flights> GetFlightByIdAsync(Guid id);
-        Task<Entities.Flights> AddFlightAsync(Entities.Flights flight);
+        Task<IEnumerable<Flight>> GetFlightsAsync();
+        Task AddFlightAsync(Flight flight);
         Task DeleteFlightAsync(Guid id);
     }
 }
